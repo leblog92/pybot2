@@ -6,8 +6,7 @@ toaster=ToastNotifier()
 x=datetime.today()
 #messages
 pybotinit="L'assistant est initialisé"
-m11h55="Il est 11h55 ! L'atelier jeux vidéos va se terminer dans 5 minutes."
-m12h="Il est midi ! L'atelier jeux vidéos est terminé."
+m12h="Il est midi ! L'atelier est terminé."
 m14h="Il est 14h ! L'atelier multimédia va commencer."
 m15h="Il est 15h ! L'atelier multimédia est terminé."
 m15h55="Il est 15h55 ! La séance se terminera dans 5 minutes."
@@ -29,7 +28,23 @@ engine.say(pybotinit)
 engine.runAndWait()
 engine.stop()
 
-#14h
+#message de 12h
+y12h=x.replace(day=x.day+1, hour=12, minute=0, second=0, microsecond=0)
+delta_t12h=y12h-x
+secs12h=delta_t12h.seconds+1
+def speak_12h():
+  print(m12h)
+  toaster.show_toast("Pybot Notification","Il est 12h",threaded=True,icon_path="icon.ico")
+  import pyttsx3
+  engine = pyttsx3.init()
+  engine.setProperty("rate",rate)
+  engine.say(m12h)
+  engine.runAndWait()
+  engine.stop()
+t12h=Timer(secs12h,speak_12h)
+t12h.start()
+
+#message de 14h
 y14h=x.replace(day=x.day+1, hour=14, minute=0, second=0, microsecond=0)
 delta_t14h=y14h-x
 secs14h=delta_t14h.seconds+1
@@ -45,7 +60,7 @@ def speak_14h():
 t14h=Timer(secs14h,speak_14h)
 t14h.start()
 
-#15h
+#message de 15h
 y15h=x.replace(day=x.day+1, hour=15, minute=0, second=0, microsecond=0)
 delta_t15h=y15h-x
 secs15h=delta_t15h.seconds+1
@@ -61,7 +76,7 @@ def speak_15h():
 t15h=Timer(secs15h,speak_15h)
 t15h.start()
 
-#15h55
+#message de 15h55
 y15h55=x.replace(day=x.day+1, hour=15, minute=55, second=0, microsecond=0)
 delta_t15h55=y15h55-x
 secs15h55=delta_t15h55.seconds+1
@@ -77,7 +92,7 @@ def speak_15h55():
 t15h55=Timer(secs15h55,speak_15h55)
 t15h55.start()
 
-#16h
+#message de 16h
 y16h=x.replace(day=x.day+1, hour=16, minute=0, second=0, microsecond=0)
 delta_t16h=y16h-x
 secs16h=delta_t16h.seconds+1
@@ -93,7 +108,7 @@ def speak_16h():
 t16h=Timer(secs16h,speak_16h)
 t16h.start()
 
-#16h55
+#message de 16h55
 y16h55=x.replace(day=x.day+1, hour=16, minute=55, second=0, microsecond=0)
 delta_t16h55=y16h55-x
 secs16h55=delta_t16h55.seconds+1
@@ -109,7 +124,7 @@ def speak_16h55():
 t16h55=Timer(secs16h55,speak_16h55)
 t16h55.start()
 
-#17h
+#message de 17h
 y17h=x.replace(day=x.day+1, hour=17, minute=0, second=0, microsecond=0)
 delta_t17h=y17h-x
 secs17h=delta_t17h.seconds+1
@@ -125,7 +140,7 @@ def speak_17h():
 t17h=Timer(secs17h,speak_17h)
 t17h.start()
 
-#17h30
+#message de 17h30
 y17h30=x.replace(day=x.day+1, hour=17, minute=30, second=0, microsecond=0)
 delta_t17h30=y17h30-x
 secs17h30=delta_t17h30.seconds+1
@@ -141,7 +156,7 @@ def speak_17h30():
 t17h30=Timer(secs17h30,speak_17h30)
 t17h30.start()
 
-#17h45
+#message de 17h45
 y17h45=x.replace(day=x.day+1, hour=17, minute=45, second=0, microsecond=0)
 delta_t17h45=y17h45-x
 secs17h45=delta_t17h45.seconds+1
@@ -157,7 +172,7 @@ def speak_17h45():
 t17h45=Timer(secs17h45,speak_17h45)
 t17h45.start()
 
-#17h55
+#message de 17h55
 y17h55=x.replace(day=x.day+1, hour=17, minute=55, second=0, microsecond=0)
 delta_t17h55=y17h55-x
 secs17h55=delta_t17h55.seconds+1
@@ -173,7 +188,7 @@ def speak_17h55():
 t17h55=Timer(secs17h55,speak_17h55)
 t17h55.start()
 
-#17h59
+#message de 17h59
 y17h59=x.replace(day=x.day+1, hour=17, minute=59, second=0, microsecond=0)
 delta_t17h59=y17h59-x
 secs17h59=delta_t17h59.seconds+1
