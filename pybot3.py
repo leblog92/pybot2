@@ -21,7 +21,7 @@ m17h59="La Médiathèque sera fermée dans 1 minute ! Merci de bien vouloir ferm
 #voice rate setting
 rate=160
 
-toaster.show_toast("Pybot Notification","L'assistant est initialisé",icon_path="icon.ico")
+toaster.show_toast("Pybot Notification","L'assistant est initialisé",threaded=True,icon_path="icon.ico")
 import pyttsx3
 engine = pyttsx3.init()
 engine.setProperty("rate",rate)
@@ -35,7 +35,7 @@ delta_t14h=y14h-x
 secs14h=delta_t14h.seconds+1
 def speak_14h():
   print(m14h)
-  toaster.show_toast("Pybot Notification","Il est 14h",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 14h",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -51,7 +51,7 @@ delta_t15h=y15h-x
 secs15h=delta_t15h.seconds+1
 def speak_15h():
   print(m15h)
-  toaster.show_toast("Pybot Notification","Il est 15h",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 15h",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -67,7 +67,7 @@ delta_t15h55=y15h55-x
 secs15h55=delta_t15h55.seconds+1
 def speak_15h55():
   print(m15h55)
-  toaster.show_toast("Pybot Notification","Il est 15h55",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 15h55",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -83,7 +83,7 @@ delta_t16h=y16h-x
 secs16h=delta_t16h.seconds+1
 def speak_16h():
   print(m16h)
-  toaster.show_toast("Pybot Notification","Il est 16h",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 16h",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -99,7 +99,7 @@ delta_t16h55=y16h55-x
 secs16h55=delta_t16h55.seconds+1
 def speak_16h55():
   print(m16h55)
-  toaster.show_toast("Pybot Notification","Il est 16h55",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 16h55",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -115,7 +115,7 @@ delta_t17h=y17h-x
 secs17h=delta_t17h.seconds+1
 def speak_17h():
   print(m17h)
-  toaster.show_toast("Pybot Notification","Il est 17h",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 17h",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -131,7 +131,7 @@ delta_t17h30=y17h30-x
 secs17h30=delta_t17h30.seconds+1
 def speak_17h30():
   print(m17h30)
-  toaster.show_toast("Pybot Notification","Il est 17h30",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 17h30",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -147,7 +147,7 @@ delta_t17h45=y17h45-x
 secs17h45=delta_t17h45.seconds+1
 def speak_17h45():
   print(m17h45)
-  toaster.show_toast("Pybot Notification","Il est 17h45",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 17h45",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -163,7 +163,7 @@ delta_t17h55=y17h55-x
 secs17h55=delta_t17h55.seconds+1
 def speak_17h55():
   print(m17h55)
-  toaster.show_toast("Pybot Notification","Il est 17h55",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 17h55",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
@@ -179,7 +179,7 @@ delta_t17h59=y17h59-x
 secs17h59=delta_t17h59.seconds+1
 def speak_17h59():
   print(m17h59)
-  toaster.show_toast("Pybot Notification","Il est 17h59",icon_path="icon.ico")
+  toaster.show_toast("Pybot Notification","Il est 17h59",threaded=True,icon_path="icon.ico")
   import pyttsx3
   engine = pyttsx3.init()
   engine.setProperty("rate",rate)
